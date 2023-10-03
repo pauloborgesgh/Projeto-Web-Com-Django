@@ -1,0 +1,53 @@
+
+{% extends 'tasks/base.html'%}
+
+{% block tittle %} Lista de Tarefas{% endblock %}
+
+{% block content %}
+<style>
+.status{
+    background-color:gold;
+    border-radius:15px ;
+    padding-bottom:3px;
+    padding-top: 3px;
+}
+</style>
+<div class="offset-1 col-10 list-div">
+    <h1>Lista de denuncia</h1>
+     <a href="">
+
+    <div class="col-2 add-div">
+       
+        <i class="fas fa-plus"></i> Adicionar Denuncia
+    </div>
+    </a>
+    <div class="col-9 search-div">
+     
+    </div>
+       
+   <div class="list">
+        {% for task in tasks %}
+        <br>
+        <ul class="task-list">
+        
+            <span class="buttons"> <i class="fas fa-trash">Excluir</i></span>
+            <span class="buttons">Local Registrado <i class="fas fa-edit">Editar</i></span><br>
+            <span class="status" >Status: Verficar</span ><br>
+
+            <span><a href="/tasks/{{task.id}}">Rua :{{task.rua}}</a> </span><br>
+            <span><a href="/tasks/{{task.id}}">Bairro:{{task.bairro}}</a></span><br>
+            <span><a href="/tasks/{{task.id}}">Nº Local:{{task.number}}</a></span><br>
+            <span><a href="/tasks/{{task.id}}">Observação: {{task.obs}}</a></span><br>
+            <span><a href="/tasks/{{task.id}}">Data: {{task.date}}</a></span>
+
+            
+
+           
+            
+        </ul>
+        {%  endfor %}
+    </div> 
+
+</div>
+
+{% endblock  %}

@@ -1,0 +1,103 @@
+h1{
+color: blue;
+
+}
+
+body{
+    background-color: rgba(109, 244, 244, 0.433);
+    margin-top: 10px;
+   
+}
+
+.navbar-nav{
+    margin: auto;
+    border-bottom: 5px solid #333333;
+    margin-bottom: 5px;
+    border-radius: 5px;
+
+}
+.navbar-brand{
+    font-size: larger;
+    color: rgb(0, 198, 233);
+  
+    border-radius: 5px;
+   
+}
+.nav-light .navbar-nav .a.nav-link{
+    
+    letter-spacing: 2px;
+    border-radius: 10px;
+  
+}
+.fas.fa-trash,.fas.fa-edit{
+    cursor: pointer;
+    margin: 6px;
+    font-size: 20px;
+    float: right;
+
+
+}
+.fas.fa.plus{
+    color: #ccc;
+    margin-right:10px ;
+    margin-left: 5px;
+}
+.fas.fa-trash{
+    color: #ff0f0f;
+}
+
+.fas.fa-edit{
+    color: rgb(5, 163, 36);
+}
+
+.add-div{
+
+    background-color: rgb(41, 19, 235);
+    cursor: pointer;
+    display: inline-block;
+    color: #ccc;
+    padding: 6px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/*mid */
+.list{
+
+    padding: 0;
+}
+.task-list{
+    padding-left: 0;
+    border: 1px dashed #ccc;
+    border-radius: 20px;
+
+}
+.task-item{
+    list-style: none;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 10px;
+    
+  
+}
+span{
+    padding: 12px;
+    margin-top: 10px;
+    
+   
+}
+
+
+.footer{
+background-color: rgba(109, 244, 244, 0.433);
+height: 200px;
+border-top: 3px solid #333;
+
+}
+.area{text-align: center;
+    
+}
+#add-link{
+    text-decoration: none;
+}
+

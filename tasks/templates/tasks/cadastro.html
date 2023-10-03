@@ -1,0 +1,41 @@
+
+{% extends 'tasks/base.html'%}
+
+{% block tittle %} Cadastro Denuncia{% endblock %}
+
+{% block content %}
+
+<style>
+    /*CSS form*/
+    /*.area{
+        text-align: center;
+        padding:  15px;
+
+    }
+    label{
+        margin: 5px;
+        padding: 1px;
+        color: rgb(12, 11, 10);
+        
+    }
+    input,.msg{
+        border-radius: 5px;
+    }
+        legend{
+            background-color: aquamarine;
+            border-radius: 30px;
+        }
+*/
+</style>
+    <legend>Formulário</legend>
+    <form  autocomplete="off" method="POST"> 
+      {% csrf_token %}  
+        {{ form.as_p }}
+      <input class="btn btn-success" type="submit" value="Enviar">
+
+ 
+    </form>
+
+
+
+{% endblock  %}

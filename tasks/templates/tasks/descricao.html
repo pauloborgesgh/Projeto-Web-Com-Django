@@ -1,0 +1,32 @@
+
+{% extends 'tasks/base.html'%}
+
+{% block tittle %} Descrição Local{% endblock %}
+
+{% block content %}
+<hr>
+<style>
+.status{
+    background-color:gold;
+    border-radius:15px ;
+    padding-bottom:3px;
+    padding-top: 3px;
+}
+
+
+</style>
+<div class="offset-1 col-10 list-div">
+    <br>
+    <h3>Descrição Do local</h3>
+           
+            <span><a href="/tasks/{{task.id}}">Rua :{{task.rua}}</a> </span><br>
+            <span><a href="/tasks/{{task.id}}">Bairro:{{task.bairro}}</a></span><br>
+            <span><a href="/tasks/{{task.id}}">Nº Local:{{task.number}}</a></span><br>
+            <span><a href="/tasks/{{task.id}}">Observação: {{task.obs}}</a></span><br>
+            <span><a href="/tasks/{{task.id}}">Data: {{task.date}}</a></span>
+            <br><br>
+      
+ 
+</div>
+<hr>
+{% endblock  %}
